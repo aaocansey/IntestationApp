@@ -1,0 +1,27 @@
+.table {
+    margin: 2rem;
+    color: rgb(36, 2, 68);
+}
+.thead tr{
+    background-color: rgb(51, 2, 97)!important;
+    color: white;
+    font-weight: 700;
+    font-size: large;
+}
+
+.thead tr>td, .tbody tr>td{
+    padding: 0.5em;
+    border: 1px solid rgb(53, 1, 112);
+}
+
+.tbody tr:nth-child(even){
+    background-color: rgb(172, 155, 206);
+}
+
+.tbody tr>td>button {
+    background-color: rgb(240, 158, 6);
+    border: none;
+    border-radius: 5px;
+    color: rgb(39, 2, 73);
+    padding: 0.3em;
+}

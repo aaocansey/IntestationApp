@@ -1,0 +1,18 @@
+.appPortal{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}
+
+.sideMenu {
+    grid-column: 1/2;
+}
+
+.portalForm {
+    grid-column: 2/5;
+}
+
+.multiStep-Form {
+    grid-column: 2/5;
+}
+
+

@@ -1,0 +1,60 @@
+:root {
+    --primary: rgb(84, 5, 150); 
+    --secondary: rgb(32, 0, 58);
+ }
+
+.personalInfo-Form, Form, .form-Footer{
+    margin: 2rem;
+}
+
+
+.textarea textarea{
+    margin-bottom: 1.5rem;
+    outline: none !important;
+    border: 1px var(--primary) solid;
+    border-color: var(--primary);
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: var(--secondary);
+    background: rgb(255, 255, 255);
+}
+
+.form-Footer button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+}
+
+.nameTitle{
+    margin-bottom: 1.5rem;
+}
+.nameTitle select, .appType select{
+    border-color: var(--primary);
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: var(--primary);
+}
+
+.nameTitle option {
+    color: var(--primary);
+}
+.nameTitle option ::selection{
+    outline: blue;
+    color: var(--primary);
+}
+
+.appType {
+    margin-bottom: 2rem;
+}
+
+.option {
+    color: white!important;
+    background-color: var(--primary)!important;
+}
+
+.option:hover{
+    background-color: var(--primary)!important;
+}

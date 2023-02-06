@@ -1,0 +1,86 @@
+/* Variables */
+:root {
+    --primary: rgb(84, 5, 150); 
+    --secondary: rgb(32, 0, 58);
+ }
+
+ /* base styles */
+.login-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.signupform {
+    margin-top: 5rem;
+}
+
+.login-title{
+    color: var(--secondary);
+}
+
+.loginForm{
+    width: 15rem;
+    border: 2px var(--primary) solid;
+    border-top: 20px var(--primary) solid;
+    border-radius: 20px;
+    padding: 2rem;
+    background-color: rgb(244, 233, 255);
+}
+
+.inputField{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField input{
+    outline: none !important;
+    border: 1px var(--primary) solid;
+    margin-bottom: 1.5rem;
+    border-color: var(--primary);
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: var(--secondary);
+    background: rgb(255, 255, 255);
+}
+
+.inputField label{
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgotPassword{
+    font-size: small;
+    align-self: center;
+}
+
+.btn-group .btn{
+    border: none;
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 10px;
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+.signupInfo{
+    text-align: center;
+    font-size: small;
+    color: var(--primary);
+    margin-top: 20px;
+}
+
+.loginInfo{
+    font-size: small;
+    color: var(--primary);
+    margin: 20px 3rem;
+}
