@@ -1,6 +1,13 @@
 import React from "react";
 import '../App Portal/css/createApp.css'
-const CreateApp = (props) => {
+import { useSelector } from "react-redux";
+
+
+const CreateApp = () => {
+
+  const appData = useSelector((state) => state.applications);
+  console.log(appData)  
+
   return (
     <div>
       <table className="table">
@@ -15,7 +22,7 @@ const CreateApp = (props) => {
           </tr>
         </thead>
         <tbody className="tbody">
-          {props.formData.applications.map((item) => {
+          {appData.applications.map((item) => {
             return (
               <tr>
                 <td></td>

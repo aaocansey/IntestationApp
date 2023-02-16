@@ -5,9 +5,11 @@ import PersonalInfo from '../pages/App Portal/PersonalInfo';
 import ProgramType from '../pages/App Portal/ProgramType';
 import Review from '../pages/App Portal/Review';
 import '../pages/App Portal/css/appPortal.css'
-
+import { useDispatch } from 'react-redux';
+import { createApplication } from '../redux/reducers/applications_reducer';
 
 const PortalForm = (props) => {
+    const dispatch = useDispatch();
     const [page, setPage] = useState(0);
     const [appData, setAppData] = useState(
         {
@@ -53,7 +55,7 @@ const PortalForm = (props) => {
 
     const handleSubmit = () => {
         alert('Form Submitted')
-        props.addData(appData)
+        dispatch(createApplication(appData))
         console.log(appData);
     }
     
